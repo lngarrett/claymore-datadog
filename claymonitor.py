@@ -22,8 +22,6 @@ json_string = html.split('\n')[1].split('<br><br>')[0]
 json = json.loads(json_string)
 result = json['result']
 
-[u'9.5 - ETH', u'1749', u'159767;3308;0', u'26687;26768;26004;26412;26783;27110', u'3727894;2688;0', u'622706;624594;606782;616281;624945;632586', u'73;75;71;75;72;75;74;75;78;75;67;75', u'eth-us-east1.nanopool.org:9999;sia-us-east1.nanopool.org:7777', u'0;0;0;0']
-
 m = {}
 
 m['uptime'] = result[1]
