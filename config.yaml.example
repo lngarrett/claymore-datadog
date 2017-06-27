@@ -1,0 +1,5 @@
+datadog_api_key: YOURKEYHERE
+datadog_app_key: YOURKEYHERE
+miners:
+  - hostname: 192.168.3.240
+    port: 3333

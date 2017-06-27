@@ -1,0 +1,5 @@
+datadog_api_key: 64c136b070103ffd7ca3bb131d1e5370
+datadog_app_key: 3541dbc53a9727b67ef07abea4d6b025c39e481b
+miners:
+  - hostname: 192.168.3.240
+    port: 3333
