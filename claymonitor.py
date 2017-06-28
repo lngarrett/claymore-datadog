@@ -78,7 +78,7 @@ while True:
         for metric, value in m.iteritems():
             if type(value) is list:
                 for index, list_value in enumerate(value):
-                    dd_metrics.append({'metric':"mining.{}".format(metric), 'points':int(list_value), 'tags':["card:{}".format(index), "node:{}".format(miner['hostname'])]})
+                    dd_metrics.append({'metric':"mining.{}".format(metric), 'points':int(list_value), 'tags':["card:{}".format(index), "node:{}".format(miner['hostname'] + ":" + str(miner['port']))]})
             else:
                dd_metrics.append({'metric':"mining.{}".format(metric), 'points':int(value),'tags':["node:miner"]})
 
